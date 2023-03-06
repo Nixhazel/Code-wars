@@ -29,7 +29,7 @@
 // Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). 
 // It will never give you an empty array (that's not a walk, that's standing still!).
 
-function isValidWalk(walk) {
+/*function isValidWalk(walk) {
   //insert brilliant code here
   //there must be an equal amount of n and south and there must be an equal amount of e and w
   let n = 0;
@@ -60,4 +60,45 @@ function isValidWalk(walk) {
   }
 
 }
-console.log(isValidWalk(['w']));
+console.log(isValidWalk(['w']));*/
+/*in securities reasearch, an analyst will look at a number of attributes for a stock. one analyst would like to keep a record of the highest positive spread between a closing price and the closing price on any prior day in history. determine the maximum positive spread for a stock given its price history. if the stock remains flat or declines for the full period, return -1.  for example px = [7,1,2,5] write a javascript code to calculate the positive difference between each price and its predecessors*/
+/*function calculateMaxPositiveSpread(px) {
+  let maxPositiveSpread = -1; // Initialize the max positive spread to -1
+  let prevClosingPrice = px[0]; // Initialize the previous closing price to the first element of the price array
+
+  for (let i = 1; i < px.length; i++) {
+    let currClosingPrice = px[i]; // Get the current closing price
+    let diff = currClosingPrice - prevClosingPrice; // Calculate the difference between the current and previous closing prices
+
+    if (diff > 0 && diff > maxPositiveSpread) {
+      maxPositiveSpread = diff; // Update the max positive spread if the current difference is greater
+    }
+
+    prevClosingPrice = currClosingPrice; // Update the previous closing price for the next iteration
+  }
+
+  return maxPositiveSpread;
+}*/
+
+/*a schedule has just been released for an upcoming tech conference. the schedule provides the start and end time to go from one presentation to another. determine the maximum number of presentations that can be attended by one person. for example: scheduleStart = [1,1,2], scheduleEnd=[3,2,4]. write a javascript code that will calculate the max Presentations one person can attend
+Here's a JavaScript code that calculates the maximum number of presentations that can be attended by one person based on the start and end times of each presentation:
+*/
+/*
+function calculateMaxPresentations(scheduleStart, scheduleEnd) {
+  let n = scheduleStart.length; // Get the number of presentations in the schedule
+  let count = 1; // Initialize the count of presentations to 1, since at least one presentation can be attended
+  let i = 0; // Initialize the iterator for the start times to 0
+  let j = 1; // Initialize the iterator for the end times to 1, since the first presentation has already been counted
+
+  while (i < n && j < n) {
+    if (scheduleStart[j] >= scheduleEnd[i]) {
+      count++; // Increment the count of presentations if the next presentation starts after the current presentation ends
+      i = j; // Update the iterator for the start times to the next presentation
+    }
+    j++; // Update the iterator for the end times to the next presentation
+  }
+
+  return count;
+}*/
+
+
