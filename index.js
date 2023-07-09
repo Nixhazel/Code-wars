@@ -23,10 +23,10 @@
 //  so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their
 //   phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk
 //    (eg. ['n', 's', 'w', 'e']). You always walk only a single block for each letter (direction) and you know it takes you one minute
-//     to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten 
+//     to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten
 //     minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
 
-// Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). 
+// Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only).
 // It will never give you an empty array (that's not a walk, that's standing still!).
 
 /*function isValidWalk(walk) {
@@ -102,3 +102,29 @@ function calculateMaxPresentations(scheduleStart, scheduleEnd) {
 }*/
 
 
+// Write a function that takes an array of numbers(integers for the tests)
+// and a target number.It should find two different items in the array that, when added
+// together, give the target value.The indices of these items should then be returned in a
+// tuple / list(depending on your language) like so: (index1, index2).
+
+// For the purposes of this kata, some tests may have multiple answers; any valid solutions will
+// be accepted.
+
+// The input will always be valid(numbers will be an array of length 2 or greater, and all of
+//   the items will be numbers; target will always be the sum of two different items from that array).
+
+// function twoSum(numbers, target) {
+  
+//   for(let i=0; i<numbers.length; i++){
+    
+//     for(let j=i+1; j<=numbers.length; j++){
+      
+//       if((numbers[i] + numbers[j]) === target){
+//       return [i, j]
+//       }
+      
+//     }
+    
+//   }
+//   return [];
+// }
